@@ -1,4 +1,4 @@
-# highcharts-export-clientside
+# highcharts-export-clientside（Highcharts客户端导出图片）
 Module for [HighCharts](http://www.highcharts.com/) to exports charts client-side.
 
 Webpage for this project is here: http://a----.github.io/highcharts-export-clientside/
