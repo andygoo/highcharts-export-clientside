@@ -2,7 +2,7 @@
 
 Highcharts 客户端导出扩展。
 
-你可能需要将你的 Highcharts 图表导出为 图片或者 PDF文件，默认情况下，Highcharts 提供了在线导出服务器（http://export.highcharts.com），只需要点击对应的导出按钮即可实现导出功能。不幸的是，你可能遇到下述情况：
+你可能需要将你的 Highcharts 图表导出为 图片或者 PDF文件，默认情况下，Highcharts 提供了在线导出服务器（[http://export.highcharts.com]），只需要点击对应的导出按钮即可实现导出功能。不幸的是，你可能遇到下述情况：
 
 * 你的应用无法联网；
 * 你的图表包含机密数据，你不想通过不安全的通道传输；
@@ -16,24 +16,24 @@ Highcharts 客户端导出扩展。
 
 ## 安装
 
-Dependencies are not shipped, so you'll have to do the following:
+推荐使用 bower 进行安装相关依赖，在确保 bower 已经完全正确后，进入到本扩展下载目录，执行如下命令
 
 ```(sh)
 bower install
 ```
 
-Boom, you're done. Check the ```example.html``` file and mess with it.
+命令执行完毕后，打开 ``` example.html``` 即可看到效果了。
 
-Or just get `highcharts-export-clientside.js`.
+## 依赖
 
-## Dependencies
+本扩展一下的库或者文件如下：
 
-This module depends on:
-* [HighCharts](http://www.highcharts.com/) obviously, remember guys, it isn't free for commercial usages;
-* its exporting module, that is bundle with it;
-* for rasterized images (PNG, JPEG), a module called `canvas-tools` with is based<sup>1</sup> on [canvg](https://github.com/gabelerner/canvg) licenced under MIT Licence;
-* [jsPDF](https://parall.ax/products/jspdf) (its GitHub page is [overthere](https://github.com/MrRio/jsPDF)) for PDF support, licenced under MIT Licence;
-* Pseudo-official [export-csv](https://github.com/highslide-software/export-csv/tree/master) module for CSV and XLS support, under MIT Licence.
+
+* [HighCharts](http://www.highcharts.com/) ，注意，Highcharts 并不是免费的软件，如果用于商业用途，请购买相应的授权；
+* highcharts 导出模块，即 exporting.js；
+* 对于图片（PNG，JPEG）, 需要 highcharts 的提供的基于 [canvg](https://github.com/gabelerner/canvg) （基于MIT授权）的工具 ’canvas-tools‘；
+* [jsPDF](https://parall.ax/products/jspdf) (its GitHub page is [overthere](https://github.com/MrRio/jsPDF)) 提供导出PDF支持；
+* Pseudo-official [export-csv](https://github.com/highslide-software/export-csv/tree/master) 提供 CSV 及 XLS支持。
 
 The only dependencies you must use are HighCharts and HighCharts exporting module. If you want PNG/JPEG, add `canvas-tools`. If you want PDF support, add both `canvas-tools` and `jsPDF`. If a dependency is missing for a file type, the option will not be available in the export menu.
 
