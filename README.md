@@ -1,20 +1,20 @@
 # Highcharts客户端导出
-## PNG/JPEG/SVG/PDF/CSV/XLS
-Module for [HighCharts](http://www.highcharts.com/) to exports charts client-side.
 
-Webpage for this project is here: http://a----.github.io/highcharts-export-clientside/
+Highcharts 客户端导出扩展。
 
-You may need to export a chart you made using HighCharts to an image or a PDF. It has an exporting module but it relies on an export server, which by default is http://export.highcharts.com/ and you also –unlucky you– have one or more of the following:
-* your app doesn't have access to the intertubes;
-* your chart contains sensitive data and you don't want an unsecure channel to carry it;
-* sensitive data or not, you don't trust HighCharts with it;
-* it's against your company policies;
-* you don't want to set an export server up;
-* you think it's 2015 and FFS, _browsers should be able to do that_.
+你可能需要将你的 Highcharts 图表导出为 图片或者 PDF文件，默认情况下，Highcharts 提供了在线导出服务器（http://export.highcharts.com），只需要点击对应的导出按钮即可实现导出功能。不幸的是，你可能遇到下述情况：
 
-Additionally, it provides a common interface between the official export module and `export-csv`.
+* 你的应用无法联网；
+* 你的图表包含机密数据，你不想通过不安全的通道传输；
+* 在线导出不符合你公司的安全隐私策略；
+* 你不想在本地搭建导出服务器；
+* 都什么年代了，浏览器端完全可以实现这些功能.
 
-## Build / Install
+
+另外，本插件还提供了官方导出模块支持及导出“cvs”功能。
+
+
+## 安装
 
 Dependencies are not shipped, so you'll have to do the following:
 
